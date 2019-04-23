@@ -20,7 +20,7 @@ router.post("/login", requiredParams(["email", "password"]), async (req, res) =>
     if (!await argon2.verify(user.password.trim(), password)) return res.sendJsonError("You have entered a wrong password");
 
     // User authenticated, provided them with a bearer token
-    const token = jwt.sign(user.user_uuid);
+    const token = jwt.sign(user.id);
 
     res.json({token: token});
 });

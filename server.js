@@ -6,6 +6,9 @@ const { CustomRouterFunctions } = require("./framework/CustomRouter");
 const { Logger } = require('./framework/Logger');
 
 const userRouter = require('./routes/users');
+const moviesRouter = require('./routes/movies');
+const showsRouter = require('./routes/shows');
+const bookRouter = require('./routes/book');
 
 // Initialize express and set port number
 const app = express();
@@ -26,7 +29,10 @@ app.get("/", (req, res) => {
 });
 
 // Add routers
-app.use("/api/user", userRouter);
+app.use("/api/users", userRouter);
+app.use("/api/movies", moviesRouter);
+app.use("/api/shows", showsRouter);
+app.use("/api/book", bookRouter);
 
 // Starting the API
 app.listen(port, () => Logger.info(`Zomovie API listening on port ${port}`));

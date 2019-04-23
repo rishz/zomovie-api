@@ -1,15 +1,17 @@
 const jwt = require('jsonwebtoken');
 const config = require('../config/config');
 const secret = config.jwtSecret;
+const pool = require('../db/config');
 
 // Routes to run auth on
 const securedRoutes = [
     "/api/profile",
-    "/api/movies",
+    "/api/book",
 ];
 
 const userExists = async (id) => {
-    // TODO check if user exists in the database
+    const queryResult = await pool.query('SELECT * FROM users WHERE id = $1', [id]);
+    return (queryResult.rows.length > 0);
 };
 
 const verify = (token) => {
