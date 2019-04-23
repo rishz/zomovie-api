@@ -4,13 +4,13 @@ const jwt = require('../auth/jwtConfig');
 const argon2 = require('argon2');
 const { requiredParams, requiredParam } = require('../framework/ParamHandler');
 const { ErrorHandler } = require('../framework/ErrorHandler');
-const pool = require('../db/config');
+const { getUserFromEmail, insertUser } = require('../db/queries/users');
 
 router.post("/login", requiredParams(["email", "password"]), async (req, res) => {
     const email = req.body.email.toLowerCase();
     const password = req.body.password;
 
-    const queryResult = await pool.query('SELECT * FROM users WHERE email = $1', [email]);
+    const queryResult = await getUserFromEmail(email);
 
     // User found?
     if (queryResult.rows.length == 0) return res.return404Error("user");
@@ -32,14 +32,12 @@ router.post("/register", requiredParams(["email", "password", "first_name", "las
     const email = req.body.email.toLowerCase();
 
     // Check email not in use
-    const result = await pool.query('SELECT * FROM users WHERE email = $1', [email]);
+    const result = await getUserFromEmail(email);
     if (result.rows.length > 0) return res.sendJsonError("Email already exists. Try Logging in");
 
     try{
         // Save user in database
-        const user = await pool.query('INSERT INTO users (email, password, first_name, last_name, birth_date) VALUES ($1, $2, $3, $4, $5)',
-                                [email, hash, req.body.first_name, req.body.last_name, req.body.birth_date]);
-
+        await insertUser(email, hash, req.body.first_name, req.body.last_name, req.body.birth_date);
         res.sendStatusSuccess();
     } catch (err) { ErrorHandler(err, res); }
 });

@@ -6,7 +6,7 @@ const pool = require('../db/config');
 // Routes to run auth on
 const securedRoutes = [
     "/api/profile",
-    "/api/book",
+    "/api/booking",
 ];
 
 const userExists = async (id) => {

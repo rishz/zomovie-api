@@ -28,3 +28,34 @@
 {"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-23T07:55:28.877Z"}
 {"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-23T07:56:15.893Z"}
 {"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-23T08:31:24.476Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-23T16:18:53.833Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-23T16:21:01.970Z"}
+{"level":"error","message":"error: invalid input syntax for type uuid: \"236751\"","timestamp":"2019-04-23T16:23:26.261Z"}
+{"level":"error","message":"ReferenceError: shows is not defined","timestamp":"2019-04-23T16:33:14.226Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-23T16:33:26.066Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-23T16:34:25.233Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-23T16:34:49.733Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-23T16:50:08.461Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-23T16:55:36.799Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-23T16:56:02.452Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-23T16:58:09.117Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-23T16:59:58.359Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-23T17:00:38.971Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-23T17:03:00.280Z"}
+{"level":"error","message":"TypeError: Cannot read property 'length' of undefined","timestamp":"2019-04-23T17:09:25.001Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-23T17:13:42.080Z"}
+{"level":"error","message":"TypeError: Cannot read property 'length' of undefined","timestamp":"2019-04-23T17:13:49.418Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-23T17:14:07.163Z"}
+{"level":"error","message":"error: invalid input syntax for type uuid: \"profile\"","timestamp":"2019-04-23T17:16:32.176Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-23T17:18:28.891Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-23T17:19:44.043Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-23T17:20:51.362Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-23T17:25:07.876Z"}
+{"level":"error","message":"error: invalid input syntax for type uuid: \"check\"","timestamp":"2019-04-23T17:28:05.958Z"}
+{"level":"error","message":"error: invalid input syntax for type uuid: \"check\"","timestamp":"2019-04-23T17:30:14.737Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-23T17:31:11.577Z"}
+{"level":"error","message":"error: invalid input syntax for type uuid: \"check\"","timestamp":"2019-04-23T17:31:14.951Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-23T17:35:01.998Z"}
+{"level":"error","message":"error: invalid input syntax for type uuid: \"check\"","timestamp":"2019-04-23T17:35:05.632Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-23T17:36:54.723Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-23T17:37:14.494Z"}
