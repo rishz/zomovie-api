@@ -71,3 +71,63 @@
 {"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T18:18:08.715Z"}
 {"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T18:21:56.435Z"}
 {"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-24T18:34:45.521Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-24T19:13:39.706Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-24T19:14:06.375Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T19:14:12.884Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T19:14:12.892Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T19:15:07.493Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T19:15:07.494Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T19:15:57.492Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T19:15:57.494Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T19:18:48.075Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T19:18:48.077Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T19:19:01.339Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T19:19:01.343Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T19:19:16.293Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T19:19:16.299Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T19:20:11.145Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T19:20:11.146Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T19:20:44.157Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T19:20:44.158Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T19:21:57.560Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T19:21:57.566Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T19:23:25.140Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T19:23:25.148Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T19:26:15.185Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T19:26:15.188Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T19:26:56.031Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T19:26:56.032Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-24T19:46:20.444Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T19:52:05.341Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T19:52:05.344Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T19:55:53.684Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T19:55:53.685Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T19:57:34.546Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T19:57:34.548Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T19:59:18.275Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T19:59:18.276Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T20:04:15.029Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T20:04:15.031Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T20:05:42.299Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T20:05:42.302Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T20:17:28.236Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T20:17:28.238Z"}
+{"level":"error","message":"error: invalid input syntax for type uuid: \"null\"","timestamp":"2019-04-24T20:26:35.118Z"}
+{"level":"error","message":"error: invalid input syntax for type uuid: \"null\"","timestamp":"2019-04-24T20:28:34.856Z"}
+{"level":"error","message":"error: invalid input syntax for type uuid: \"null\"","timestamp":"2019-04-24T20:41:44.728Z"}
+{"level":"error","message":"error: invalid input syntax for type uuid: \"null\"","timestamp":"2019-04-24T20:41:50.050Z"}
+{"level":"error","message":"error: invalid input syntax for type uuid: \"null\"","timestamp":"2019-04-24T20:43:29.520Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-24T21:02:47.434Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-24T21:04:29.894Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-24T21:05:14.871Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-24T21:06:27.521Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-24T21:07:43.479Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-24T21:10:48.423Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-24T21:17:54.880Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-24T21:21:05.950Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-24T21:23:16.808Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T21:23:28.733Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T21:23:28.735Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-24T21:26:50.040Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-24T21:32:32.094Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-24T21:35:59.607Z"}

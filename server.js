@@ -18,17 +18,21 @@ const port = process.env.PORT || config.port;
 // Plug in body parser middleware for parsing json requests
 app.use(bodyParser.json());
 
-// CORS Support
-app.use((req, res, next) => {
-    // res.header("Access-Control-Allow-Origin", "*");
-    // res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, access-key");
+const cors = require('cors')
+app.use(cors())
+app.options('*', cors())
 
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
-    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
-    res.setHeader('Access-Control-Allow-Credentials', true);
-    next();
-});
+// // CORS Support
+// app.use((req, res, next) => {
+//     // res.header("Access-Control-Allow-Origin", "*");
+//     // res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, access-key");
+
+//     res.setHeader('Access-Control-Allow-Origin', '*');
+//     res.setHeader('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,PATCH,OPTIONS');
+//     res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
+//     res.setHeader('Access-Control-Allow-Credentials', true);
+//     next();
+// });
 
 // Handle authentication
 app.use(AuthenticationHandler);
