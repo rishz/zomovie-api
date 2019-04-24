@@ -9,5 +9,9 @@ module.exports = {
         await pool.query('INSERT INTO movies (id, name, plot, rating, count_shows, category, poster_url, backdrop_url, duration) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)',
                                 [id, name, plot, rating, count_shows,
                                     category, poster_url, backdrop_url, duration]);
+    },
+    getMovies: async (skip) => {
+        const movies = await pool.query('SELECT * FROM movies ORDER BY id ASC LIMIT 20 OFFSET $1', [skip*20]);
+        return movies;
     }
 };

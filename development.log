@@ -59,3 +59,15 @@
 {"level":"error","message":"error: invalid input syntax for type uuid: \"check\"","timestamp":"2019-04-23T17:35:05.632Z"}
 {"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-23T17:36:54.723Z"}
 {"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-23T17:37:14.494Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-24T07:13:20.860Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-24T07:18:25.243Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-24T07:42:36.673Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-24T07:46:25.927Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-24T08:14:49.398Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-24T08:17:46.742Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-24T08:53:25.583Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-24T08:54:19.097Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-24T08:57:21.927Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T18:18:08.715Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-24T18:21:56.435Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-24T18:34:45.521Z"}
