@@ -9,9 +9,6 @@ const moment = require('moment');
 
 router.get("/:id", async (req, res) => {
     const queryResult = await getSeats(req.params.id);
-    if (queryResult.rows.length == 0) {
-        return res.return404Error("booked seats for this show");
-    }
     res.json(queryResult.rows);
 });
 
@@ -35,6 +32,7 @@ router.post("/", requiredParams(["show_id", "selected_seats"]), async (req, res)
         const booking = await getBookingsFromShowAndUser(userId, req.body.show_id);
         await markSeats(booking.rows[0].id, selectedSeats);
         await commit();
+
         res.json({ booking_id: booking.rows[0].id });
     } catch (err) {
         console.log(err);
