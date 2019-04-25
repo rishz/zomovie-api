@@ -175,3 +175,18 @@
 {"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-25T17:17:22.221Z"}
 {"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-25T17:18:45.571Z"}
 {"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-25T17:40:11.486Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-25T17:46:15.385Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-25T17:46:18.534Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-25T17:46:18.542Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-25T18:11:19.983Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-25T18:14:01.079Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-25T18:14:15.731Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-25T18:15:55.387Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-25T18:18:13.548Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-25T18:21:28.212Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-25T18:22:39.855Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-25T18:24:18.580Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-25T18:38:45.049Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-25T18:39:57.012Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-25T18:40:46.618Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-25T18:42:40.143Z"}

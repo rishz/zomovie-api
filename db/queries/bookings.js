@@ -15,7 +15,8 @@ module.exports = {
         await pool.query('COMMIT');
     },
     insertBooking: async (show_id, user_id, count_tickets, booking_time) => {
-        await pool.query('INSERT INTO bookings (show_id, user_id, count_tickets, booking_time) VALUES ($1, $2, $3, $4)', [show_id, user_id, count_tickets, booking_time]);
+        const res = await pool.query('INSERT INTO bookings (show_id, user_id, count_tickets, booking_time) VALUES ($1, $2, $3, $4) RETURNING id', [show_id, user_id, count_tickets, booking_time]);
+        return res;
     },
     getBookingsFromId: async (id) => {
         const queryResult = await pool.query('SELECT * FROM bookings WHERE id = $1', [id]);

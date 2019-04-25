@@ -28,8 +28,7 @@ router.post("/", requiredParams(["show_id", "selected_seats"]), async (req, res)
         await begin();
         await decrementTicketsFromShow(selectedSeats.length, req.body.show_id);
         const date = new Date();
-        await insertBooking(req.body.show_id, userId, selectedSeats.length, moment(date).format("YYYY/MM/DD HH:mm:ss"));        
-        const booking = await getBookingsFromShowAndUser(userId, req.body.show_id);
+        const booking = await insertBooking(req.body.show_id, userId, selectedSeats.length, moment(date).format("YYYY/MM/DD HH:mm:ss"));        
         await markSeats(booking.rows[0].id, selectedSeats);
         await commit();
 
