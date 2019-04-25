@@ -10,6 +10,7 @@ const moviesRouter = require('./routes/movies');
 const showsRouter = require('./routes/shows');
 const bookingRouter = require('./routes/booking');
 const profileRouter = require('./routes/profile');
+const seatsRouter = require('./routes/seats');
 
 // Initialize express and set port number
 const app = express();
@@ -51,6 +52,7 @@ app.use("/api/movies", moviesRouter);
 app.use("/api/shows", showsRouter);
 app.use("/api/booking", bookingRouter);
 app.use("/api/profile", profileRouter);
+app.use("/api/seats", seatsRouter);
 
 // Starting the API
 app.listen(port, () => Logger.info(`Zomovie API listening on port ${port}`));

@@ -7,6 +7,7 @@ const pool = require('../db/config');
 const securedRoutes = [
     "/api/profile",
     "/api/booking",
+    "/api/seats",
 ];
 
 const userExists = async (id) => {

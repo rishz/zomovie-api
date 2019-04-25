@@ -163,3 +163,6 @@
 {"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-25T07:28:29.676Z"}
 {"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-25T07:28:32.045Z"}
 {"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-25T07:28:32.048Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-25T11:24:00.521Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-25T11:25:36.453Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-25T11:53:10.499Z"}
