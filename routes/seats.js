@@ -3,6 +3,9 @@ const router = express.Router();
 const { requiredParams, requiredParam } = require('../framework/ParamHandler');
 const { ErrorHandler } = require('../framework/ErrorHandler');
 const { getSeats } = require('../db/queries/seats');
+const { getShowFromId, decrementTicketsFromShow } = require('../db/queries/shows');
+const { getBookingsFromShowAndUser, begin, rollback, commit, insertBooking, getBookingsFromId, getBookingsFromMutualTime } = require('../db/queries/bookings');
+const moment = require('moment');
 
 router.get("/:id", async (req, res) => {
     const queryResult = await getSeats(req.params.id);
@@ -16,33 +19,27 @@ router.post("/", requiredParams(["show_id", "selected_seats"]), async (req, res)
 
     const queryResult = await getSeats(req.body.show_id);
     if(queryResult.rows.length == 0){ return res.return404Error("show"); }
-    const show = queryResult.rows[0];
-    const booked = show.booked.split('');
-    const pending = show.pending.split('');
+    const seats = queryResult.rows;
     const selectedSeats = req.body.selected_seats;
-    for(let i=0; i<selected_seats.length; i++){
-        if(booked[selectedSeats[i]] == 1 || pending[selectedSeats[i]] == 1){
+    for(let i=0; i<seats.length; i++){
+        if(selectedSeats.indexOf(seats[i].seat_no)>-1){
             return res.sendJsonError("Cannot book selected seats. Please choose different seats");
         }
     }
 
-    for(let i=0; i<selected_seats.length; i++){
-        pending[selectedSeats[i]] = 1;
-    }
-
+    const userId = req.UserID;
     try {
         await begin();
-        await decrementTicketsFromShow(req.body.tickets, req.body.show_id);
+        await decrementTicketsFromShow(selectedSeats.length, req.body.show_id);
         const date = new Date();
-        await insertBooking(req.body.show_id, userId, req.body.tickets, moment(date).format("YYYY/MM/DD HH:mm:ss"));
-        await commit();
-
+        await insertBooking(req.body.show_id, userId, selectedSeats.length, moment(date).format("YYYY/MM/DD HH:mm:ss"));        
         const booking = await getBookingsFromShowAndUser(userId, req.body.show_id);
+        await markSeats(booking.rows[0].id, selectedSeats);
+        await commit();
         res.json({ booking_id: booking.rows[0].id });
     } catch (err) {
-        console.log(err);
         await rollback();
-        res.sendJsonError("Could not book ");
+        res.sendJsonError("Could not book show");
     }
 });
 
