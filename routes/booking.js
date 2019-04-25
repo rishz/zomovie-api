@@ -20,9 +20,6 @@ router.post("/", requiredParams(["show_id", "tickets"]), async(req, res) => {
 
     const userId = req.UserID;
 
-    const alreadyBooked = await getBookingsFromShowAndUser(userId, req.body.show_id);
-    if (alreadyBooked.rows.length > 0) return res.sendJsonError("Cannot book multiple bookings for same show");
-
     try{
         await begin();
         await decrementTicketsFromShow(req.body.tickets, req.body.show_id);

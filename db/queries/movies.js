@@ -13,5 +13,9 @@ module.exports = {
     getMovies: async (skip) => {
         const movies = await pool.query('SELECT * FROM movies ORDER BY id ASC LIMIT 20 OFFSET $1', [skip*20]);
         return movies;
+    },
+    getMovieFromShow: async (show_id) => {
+        const queryResult = await pool.query('SELECT name FROM movies WHERE id IN (SELECT movie_id FROM SHOWS where ID=$1)', [show_id]);
+        return queryResult;
     }
 };

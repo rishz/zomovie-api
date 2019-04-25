@@ -4,10 +4,14 @@ const { requiredParams, requiredParam } = require('../framework/ParamHandler');
 const { ErrorHandler } = require('../framework/ErrorHandler');
 const { getBookingsFromUser } = require('../db/queries/bookings');
 const { getUserFromId } = require('../db/queries/users');
+const { getMovieFromShow } = require('../db/queries/movies');
 
 router.get("/history", async(req, res) => {
-
     const queryResult = await getBookingsFromUser(req.UserID);
+    for(let i=0; i<queryResult.rows.length; i++){
+        let movieResult = await getMovieFromShow(queryResult.rows[i].show_id);
+        queryResult.rows[i].movie = movieResult.rows[0].name;
+    }
     res.json(queryResult.rows);
 });
 

@@ -4,7 +4,7 @@ const jwt = require('../auth/jwtConfig');
 const argon2 = require('argon2');
 const { requiredParams, requiredParam } = require('../framework/ParamHandler');
 const { ErrorHandler } = require('../framework/ErrorHandler');
-const { getUserFromEmail, insertUser } = require('../db/queries/users');
+const { getUserFromEmail, insertUser, getUserFromId } = require('../db/queries/users');
 
 router.post("/login", requiredParams(["email", "password"]), async (req, res) => {
     const email = req.body.email.toLowerCase();
