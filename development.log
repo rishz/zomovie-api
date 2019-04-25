@@ -142,3 +142,24 @@
 {"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-25T05:37:03.724Z"}
 {"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-25T05:37:40.667Z"}
 {"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-25T05:40:03.772Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-25T05:43:15.992Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-25T05:47:49.578Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"count\"","timestamp":"2019-04-25T05:48:05.556Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-25T05:50:04.264Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-25T05:55:55.249Z"}
+{"level":"error","message":"ReferenceError: movie is not defined","timestamp":"2019-04-25T05:55:57.806Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-25T05:56:08.321Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-25T05:56:56.585Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-25T06:50:58.487Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-25T07:27:37.362Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-25T07:27:37.368Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-25T07:27:41.526Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-25T07:27:41.527Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-25T07:27:57.956Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-25T07:27:57.957Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-25T07:28:05.216Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-25T07:28:05.226Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-25T07:28:29.675Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-25T07:28:29.676Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-25T07:28:32.045Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-25T07:28:32.048Z"}

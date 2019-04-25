@@ -17,5 +17,9 @@ module.exports = {
     getMovieFromShow: async (show_id) => {
         const queryResult = await pool.query('SELECT name FROM movies WHERE id IN (SELECT movie_id FROM SHOWS where ID=$1)', [show_id]);
         return queryResult;
+    },
+    getRowCount: async () => {
+        const count = await pool.query('SELECT COUNT(*) FROM movies;');
+        return count;
     }
 };
