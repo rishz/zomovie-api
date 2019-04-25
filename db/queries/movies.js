@@ -10,16 +10,18 @@ module.exports = {
                                 [id, name, plot, rating, count_shows,
                                     category, poster_url, backdrop_url, duration]);
     },
-    getMovies: async (skip) => {
-        const movies = await pool.query('SELECT * FROM movies ORDER BY id ASC LIMIT 20 OFFSET $1', [skip*20]);
+    getMovies: async (search, skip) => {
+        search = search+'%'
+        const movies = await pool.query('SELECT * FROM movies WHERE name ILIKE $1 ORDER BY id ASC LIMIT 20 OFFSET $2', [search, skip*20]);
         return movies;
     },
     getMovieFromShow: async (show_id) => {
         const queryResult = await pool.query('SELECT name FROM movies WHERE id IN (SELECT movie_id FROM SHOWS where ID=$1)', [show_id]);
         return queryResult;
     },
-    getRowCount: async () => {
-        const count = await pool.query('SELECT COUNT(*) FROM movies;');
+    getRowCount: async (search) => {
+        search = search+'%'
+        const count = await pool.query('SELECT COUNT(*) FROM movies WHERE name ILIKE $1',[search]);
         return count;
     }
 };

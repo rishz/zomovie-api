@@ -37,9 +37,11 @@ router.get("/:id", async (req, res) => {
 router.get("/", async (req, res) => {
     // paginate
     const skip = req.body.page || req.query.page || 0;
-    let count = await getRowCount();
+    const search = req.query.search || req.param.search || '';
+
+    let count = await getRowCount(search);
     try {
-        const movies = await getMovies(skip);
+        const movies = await getMovies(search, skip);
         for (let i = 0; i < movies.rows.length; i++) {
             movies.rows[i].row_count = count.rows[0].count;
         }
