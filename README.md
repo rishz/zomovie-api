@@ -24,5 +24,7 @@ Zomovie API built in Node.js and Express with PostgreSQL database.
   - Install node dependencies
   `npm i`
 
+  - Add data to the db from data folder
+
 ## Start the API
   - `npm start`
