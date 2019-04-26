@@ -24,6 +24,11 @@ module.exports = {
         const count = await pool.query('SELECT COUNT(*) FROM movies WHERE name ILIKE $1', [search]);
         return count;
     },
+    getRowCountForGenre: async (search, genre_id) => {
+        search = search+'%'
+        const count = await pool.query('SELECT COUNT(*) FROM movies WHERE name ILIKE $1 AND id IN (SELECT movie_id FROM moviegenres WHERE genre_id = $2)', [search, genre_id]);
+        return count;
+    },
     getFilteredMovies: async (search, skip, genre_id) => {
         search = search+'%'
         const filteredMovies = await pool.query('SELECT * FROM movies WHERE name ILIKE $1 AND id IN (SELECT movie_id FROM moviegenres WHERE genre_id = $2) ORDER BY id ASC LIMIT 20 OFFSET $3', [search, genre_id, skip*20]);

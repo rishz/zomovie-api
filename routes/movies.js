@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { requiredParams, requiredParam } = require('../framework/ParamHandler');
 const { ErrorHandler } = require('../framework/ErrorHandler');
-const { getMovieFromId, insertMovie, getMovies, getRowCount, getFilteredMovies } = require('../db/queries/movies');
+const { getMovieFromId, insertMovie, getMovies, getRowCount, getFilteredMovies, getRowCountForGenre } = require('../db/queries/movies');
 const { insertMovieGenre } = require('../db/queries/moviegenres');
 
 router.post("/", requiredParams(["id", "name", "plot", "count_shows", "category",
@@ -39,14 +39,18 @@ router.get("/", async (req, res) => {
     const skip = req.body.page || req.query.page || 0;
     const search = req.query.search || req.param.search || '';
 
-    let count = await getRowCount(search);
+    
     try {
         const genre = req.param.genre || req.body.genre || req.query.genre;
-        let movies;
+        let movies, count;
 
         if(genre){
             movies = await getFilteredMovies(search, skip, genre);    
-        } else movies = await getMovies(search, skip);
+            count = await getRowCountForGenre(search, genre);
+        } else{
+            count = await getRowCount(search);
+            movies = await getMovies(search, skip);
+        }
 
         for (let i = 0; i < movies.rows.length; i++) {
             movies.rows[i].row_count = count.rows[0].count;
