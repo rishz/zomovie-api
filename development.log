@@ -198,3 +198,7 @@
 {"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-25T20:00:37.926Z"}
 {"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-25T20:05:34.890Z"}
 {"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-25T20:06:18.727Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-26T02:42:52.015Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-26T03:04:44.740Z"}
+{"level":"error","message":"error: invalid input syntax for integer: \"null\"","timestamp":"2019-04-26T03:04:44.741Z"}
+{"level":"info","message":"Zomovie API listening on port 8000","timestamp":"2019-04-26T04:07:59.300Z"}
