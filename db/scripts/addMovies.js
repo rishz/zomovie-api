@@ -1,3 +1,5 @@
+const Promise = require('bluebird');
+const request = require('request-promise');
 const pool = require('../config');
 
 const API_KEY = "782d09c794b975bed7c9d274b2a9f17d";
