@@ -1,24 +1,12 @@
 const pool = require('../config');
 const config = require('../../config/config');
-var pgtools = require('pgtools');
 
-const dbSettings = {
-    user: config.dbUser,
-    password: config.dbPassword,
-    port: 5432,
-    host: config.dbHost
-}
-
-const createDb = async () => {
-    await pgtools.createdb(dbSettings, config.dbName);
-}
-    
 module.exports = {
     // Add all tables
     createTables: async () => {
         try {
 
-            await createDb();
+            // await createDb();
             
             await pool.query(`CREATE TABLE bookings (
         id uuid DEFAULT uuid_generate_v4() PRIMARY KEY,
