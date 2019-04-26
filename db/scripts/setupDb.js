@@ -1,9 +1,25 @@
 const pool = require('../config');
+const config = require('../../config/config');
+var pgtools = require('pgtools');
 
+const dbSettings = {
+    user: config.dbUser,
+    password: config.dbPassword,
+    port: 5432,
+    host: config.dbHost
+}
+
+const createDb = async () => {
+    await pgtools.createdb(dbSettings, config.dbName);
+}
+    
 module.exports = {
     // Add all tables
-    createTables = async () => {
+    createTables: async () => {
         try {
+
+            await createDb();
+            
             await pool.query(`CREATE TABLE bookings (
         id uuid DEFAULT uuid_generate_v4() PRIMARY KEY,
         show_id uuid NOT NULL,
@@ -31,11 +47,6 @@ module.exports = {
         backdrop_url character varying(255),
         duration smallint NOT NULL)`);
 
-            await pool.query(`CREATE TABLE pending (
-        timestamp timestamp without time zone NOT NULL DEFAULT now(),
-        show_id uuid NOT NULL,
-        seat smallint)`);
-
             await pool.query(`CREATE TABLE seats (
         booking_id uuid NOT NULL,
         seat_no smallint NOT NULL)`);
@@ -46,7 +57,6 @@ module.exports = {
         end_time timestamp without time zone NOT NULL,
         movie_id integer NOT NULL,
         count_tickets integer NOT NULL)`);
-
 
             await pool.query(`CREATE TABLE users (
         id uuid DEFAULT uuid_generate_v4() PRIMARY KEY,

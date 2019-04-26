@@ -66,20 +66,24 @@ const getMoviesUrl = (page) => {
     return `https://api.themoviedb.org/3/movie/now_playing?api_key=${API_KEY}&language=en-US&page=${page}`;
 }
 
+const recurse = async (page) => {
+    await makeRequestGenres(genreUrl);
+    ids = [];
+    await makeRequestMovies(getMoviesUrl(page));
+    console.log(ids);
+    for (let i = 0; i < ids.length; i++) {
+        // await timeout(100);
+        console.log("doing");
+        try {
+            await getMovie(ids[i]);
+            console.log('++');
+        } catch (err) { continue; };
+    }
+    await addMovies(page + 1);
+}
+
 module.exports = {
-    addMovies: async (page) => {
-        await makeRequestGenres(genreUrl);
-        ids = [];
-        await makeRequestMovies(getMoviesUrl(page));
-        console.log(ids);
-        for (let i = 0; i < ids.length; i++) {
-            // await timeout(100);
-            console.log("doing");
-            try {
-                await getMovie(ids[i]);
-                console.log('++');
-            } catch (err) { continue; };
-        }
-        await addMovies(page + 1);
+    addMovies: async () => {
+        await recurse(1);
     }
 }

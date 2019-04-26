@@ -5,7 +5,7 @@ const { addShowsForMovie } = require('./addShows');
 (async () => {
     try {
         await createTables();
-        await addMovies(1);
-        await addShowsForMovie();
+        // await addMovies();
+        // await addShowsForMovie();
     } catch (err) { console.log(err); }
 })();
